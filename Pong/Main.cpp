@@ -42,6 +42,8 @@ void main()
 	int scoreP1 = 0;
 	int scoreP2 = 0;
 
+	// TEST
+
 	while (sfw::stepContext())
 	{
 		sfw::drawLine(SCREEN_WIDTH, SCREEN_HEIGHT - 5, 0, SCREEN_HEIGHT - 5);
