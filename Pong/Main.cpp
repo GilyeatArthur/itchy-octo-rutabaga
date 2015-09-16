@@ -49,16 +49,16 @@ void main()
 	//this creates and allows player one movement
 		//float p1_w = p1_x + 20;
 		float p1_h = p1_y + 80;
-		pad1::drawPlayer(p1_x, p1_y);
-		if (sfw::getKey('w') && p1_y > 10) {pad1::drawPlayer(p1_x, p1_y -= 5);}
-		if (sfw::getKey('s') && p1_h < 590) {pad1::drawPlayer(p1_x, p1_y += 5);}
+		paddle::drawPlayer(p1_x, p1_y);
+		if (sfw::getKey('w') && p1_y > 10) {paddle::drawPlayer(p1_x, p1_y -= 5);}
+		if (sfw::getKey('s') && p1_h < 590) {paddle::drawPlayer(p1_x, p1_y += 5);}
 
 		//this creates and allows player two movement
 		//float p2_w = p1_x - 20;
 		float p2_h = p2_y + 80;
-		pad1::drawPlayer(p2_x, p2_y);
-		if (sfw::getKey('o') && p2_y > 10) {pad1::drawPlayer(p2_x, p2_y -= 5);}
-		if (sfw::getKey('l') && p2_h < 590) {pad1::drawPlayer(p2_x, p2_y += 5);}
+		paddle::drawPlayer(p2_x, p2_y);
+		if (sfw::getKey('o') && p2_y > 10) {paddle::drawPlayer(p2_x, p2_y -= 5);}
+		if (sfw::getKey('l') && p2_h < 590) {paddle::drawPlayer(p2_x, p2_y += 5);}
 		
 		//draws the ball
 		sfw::drawCircle(xpos, ypos, rad);

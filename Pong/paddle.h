@@ -5,7 +5,7 @@
 
 
 
-namespace pad1
+namespace paddle
 {
 	void drawPlayer(float px, float py)//, float  pw, float ph)
 	{
